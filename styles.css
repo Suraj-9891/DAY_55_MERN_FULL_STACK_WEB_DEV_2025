@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #2987cf;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  header .logo {
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="text"], select, input[type="color"], input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  #qrPreview {
+    margin-top: 20px;
+    text-align: center;
+  
+    
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .social-links {
+    margin-top: 10px;
+  }
+  
+  footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    section {
+      padding: 20px 0;
+    }
+  
+    input[type="text"], select, input[type="color"], input[type="file"] {
+      width: 100%;
+    }
+  }
+
+  
+  #head-text{
+    font-size: 40px;
+    color: rgb(29, 25, 23);
+  }
+  #qrInput{
+    border-radius: 20px;
+    border: 3px solid black;
+  }
+
+  #generateBtn{
+    border-radius: 20px;
+    background-color: chocolate;
+  }
+  #generateBtn:hover{
+    background-color: rgb(234, 119, 37);
+  }
+  #Custom-Text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  #Size-Text{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    
+  }
+  #size{
+    border-radius: 20px;
+    border: 3px solid black;
+  }
+  #size1{
+    border-radius: 10px;
+  }
+  #size2{
+    height: 50px;
+  }
+  #Head-Text{
+    font-size: 40px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #size1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  #size2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 150px;
+  }
+  #generateWithCustomizationBtn{
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: rgb(119, 96, 20);
+  }
+  #generateWithCustomizationBtn:hover{
+    border-radius: 20px;
+    background-color: rgb(11, 56, 180);
+  }
+  #downloadBtn{
+    border-radius: 20px;
+    background-color: crimson;
+  }
+  #downloadBtn:hover{
+    border-radius: 20px;
+    background-color: rgb(237, 19, 63);
+  }
+  #shareFacebookBtn{
+    border-radius: 20px;
+    background-color: darkorchid;
+  }
+  #shareFacebookBtn{
+    border-radius: 20px;
+    background-color: rgb(162, 36, 225);
+  }
+  #shareTwitterBtn{
+    border-radius: 20px;
+    background-color: rgb(169, 46, 169);
+  }
+  #shareTwitterBtn:hover{
+    border-radius: 20px;
+    background-color: rgb(181, 26, 181);
+  }
+  #foregroundColor{
+    border-radius: 10px;
+    
+  }
+  #backgroundColor{
+    border-radius: 10px;
+  }
+  #logoUpload{
+    background-color: darkturquoise;
+    border-radius: 30px;
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <!-- <img src="logo.png" alt="QR Code Generator Logo" class="logo"> -->
+      <h1 id="Head-Text">QR Code Generator</h1>
+      <nav>
+        <ul>
+          <li><a href="#generator">Generate</a></li>
+          <li><a href="#customization">Customization</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#sharing">Share</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- QR Code Generator Section -->
+  <section id="generator" class="section">
+    <div class="container">
+      <h2>Generate Your QR Code</h2>
+      <input type="text" id="qrInput" placeholder="Enter URL, Text, or Email" />
+      <button id="generateBtn">Generate QR Code</button>
+      <div id="qrPreview">
+        <canvas id="qrCanvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Code Customization Section -->
+  <section id="customization" class="section">
+    <div class="container">
+      <h2>Customize QR Code</h2>
+      <label id="size2" for="size">Size:</label>
+      <select id="size">
+        <option value="128">Small</option>
+        <option value="256">Medium</option>
+        <option value="512">Large</option>
+      </select>
+
+      <label id="size1" for="foregroundColor">Foreground Color:</label>
+      <input type="color" id="foregroundColor" value="#000000" />
+
+      <label id="size1" for="backgroundColor">Background Color:</label>
+      <input type="color" id="backgroundColor" value="#ffffff" />
+
+      <label id="size1" for="logoUpload">Upload Logo:</label>
+      <input type="file" id="logoUpload" accept="image/*" />
+
+      <button id="generateWithCustomizationBtn">Generate Customized QR Code</button>
+    </div>
+  </section>
+
+  <!-- QR Code Download Section -->
+  <section id="download" class="section">
+    <div class="container">
+      <h2>Download QR Code</h2>
+      <button id="downloadBtn">Download QR Code (PNG)</button>
+    </div>
+  </section>
+
+  <!-- QR Code Sharing Section -->
+  <section id="sharing" class="section">
+    <div class="container">
+      <h2>Share QR Code</h2>
+      <button id="shareFacebookBtn">Share on Facebook</button>
+      <button id="shareTwitterBtn">Share on Twitter</button>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 QR Code Generator. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
